@@ -1,0 +1,11 @@
+insert into customers values(1, 'Dias Mombekov', now(), 'Almaty');
+insert into products values(562, 'Phone', 'Samsung', 600000);
+insert into orders values(100, 1, 600000, true);
+insert into order_items values(100, 562, 1);
+update customers set full_name = 'Said Vokebmom' where id = 1;
+update products set description = 'priceless' where id = '562';
+update orders set is_paid = false where customer_id = 1;
+delete from order_items where order_code = 100;
+delete from orders where code = 100;
+delete from products where id = '562';
+delete from customers where id = 1;
